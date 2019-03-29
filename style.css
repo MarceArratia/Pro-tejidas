@@ -1,0 +1,24 @@
+.navbar{
+background: #686FE1;;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+.btn{
+   background: #686FE1;
+}
+
+
+@media screen and (min-width:480px){
+.container{
+    position: fixed;
+}
+}
+@media screen and (min-width:767px){
+    .container{
+        position: fixed;
+    } 
+}
+@media screen and (min-width:950px){
+    .container{
+        position: fixed;
+    } 
+}
