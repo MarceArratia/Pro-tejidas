@@ -1,3 +1,8 @@
+window.onload("myalert()");
+
+function myalert(){
+    alert('funciona?')
+}
 
 /**
  * Moves the map to display over Berlin
