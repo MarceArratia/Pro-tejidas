@@ -2,8 +2,14 @@
 background: #686FE1;;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
 }
-.btn{
-   background: #686FE1;
+
+.btn-primary{
+    background: #686FE1;
+    box-shadow: 0px 4px 4px rgba(103, 194, 172, 0.5);
+    border-radius: 46px;
+    align-self: auto;
+    position: relative;
+
 }
 
 
@@ -21,4 +27,51 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
     .container{
         position: fixed;
     } 
+}
+
+/* COMMENT BOX */
+.card{
+position: auto;
+width: 324px;
+height: 243px;
+
+
+background: #686FE1;
+box-shadow: 0px 4px 4px rgba(104, 111, 225, 0.43);
+border-radius: 10px;
+}
+
+.card-header{
+    position: inherit;
+    height: 31px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: antiquewhite;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: normal;
+letter-spacing: 1.25px;
+
+color: #979797;
+
+}
+
+.card-text{
+    position: absolute;
+width: 279px;
+height: 114px;
+background: #FFFFFF;
+}
+
+.btn-primary2{
+    position: center;
+
+
+
+background: #00BCD4;
+border-radius: 2px;
 }
