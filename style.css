@@ -1,6 +1,42 @@
 .navbar{
 background: #686FE1;;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+color: white;
+
+}
+
+.alert{
+margin-bottom: -1rem;
+}
+
+.colorMenu{
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border-color: none;
+}
+
+.colorMenuIcon{
+  color: #FFFFFF
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(img/Menu.png);
+}
+
+.body{
+    line-height:-1.5;
+}
+
+.navbar-toggler{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .btn-primary{
@@ -13,9 +49,9 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
 }
 .buttonZone{
     background: #686FE1;
-    margin-left: 19%;
+    margin-left: 24%;
     border-radius: 30px;
-    font-size: 20px;
+    font-size: 22px;
     color: white;
 }
 
@@ -48,12 +84,12 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
 
 .card-header{
     position: inherit;
-    height: 31px;
+    height: 25px;
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
-    background-color: antiquewhite;
+    background-color: white;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -76,7 +112,7 @@ background: #FFFFFF;
     background: #00BCD4;
     border-radius: 2px;
 }
-
+/*
 .buttonZone {
     background: #686FE1;
     margin-left: 19%;
@@ -84,19 +120,60 @@ background: #FFFFFF;
     font-size: 20px;
     color: white;
 }
+*/
 
+
+
+.searchButton{
+    padding:-.375rem .75rem;
+    
+}
+
+
+.pb-2, .py-2 {
+    padding-bottom:-.5rem!important;
+}
+
+.mt-2, .my-2 {
+margin-top: .1rem!important; 
+}
 .alert{
     background-color: #F0F2F6;
 }
 
-.btn{
-    background-color: #00BCD4;
-    margin-left: 19%;
-    border-radius: 30px;
-    font-size: 20px;
-    color: white;
+.cita{
+    font-family: 'Roboto',sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 5%;
 }
 
+.author{
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+}
+.btn{
+    background-color: #00BCD4;
+    border-radius: 30px;
+    font-size: 12px;
+    color: white;
+    
+}
+
+.btn2{
+    background-color: #00BCD4;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 10px;
+    margin: auto;
+    padding: 2.3%;
+    border-radius: 8%;
+}
 .p{
     position: absolute;
     width: 315px;
