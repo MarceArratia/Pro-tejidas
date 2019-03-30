@@ -9,7 +9,7 @@
     <title>WomanReact</title>
 
 
-        <!-- SCRIPT MAP-->
+        <!--MAP-->
     <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1549984893" />
     <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
     <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
@@ -46,12 +46,6 @@
 </head>
 
 <body>
-        <div class="alert alert-dismissible fade show" role="alert">
-                <strong>Pro-Tejidas</strong> quiere acceder a la ubicación de éste dispositivo
-                <button type="button" class="btn" data-dismiss="alert" aria-label="Close">Entendido
-                        <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
     <!--INICIO MAPA-->
    
             <div id="map" style="width: 100%; height: 200px; background: grey" >
@@ -60,26 +54,17 @@
     var metroMarker = new H.map.Marker({lat:-33.4228, lng:-70.6450});
     map.addObject(metroMarker);
    
-    var crisMarker = new H.map.Marker({lat:-33.4193, lng: -70.6438});
-    map.addObject(crisMarker);
+    var romeMarker = new H.map.Marker({lat:41.9, lng: 12.5});
+    map.addObject(romeMarker);
   
-    var laboratoriaMarker = new H.map.Marker({lat:-33.4191, lng:-70.6418});
-    map.addObject(laboratoriaMarker);
+    var berlinMarker = new H.map.Marker({lat:52.5166, lng:13.3833});
+    map.addObject(berlinMarker);
   
-    var donPepeMarker = new H.map.Marker({lat:-33.4187, lng: -70.6409});
-    map.addObject(donPepeMarker);
+    var madridMarker = new H.map.Marker({lat:40.4, lng: -3.6833});
+    map.addObject(madridMarker);
   
-    var laEsquinaMarker = new H.map.Marker({lat:-33.4186, lng:-70.6422});
-    map.addObject(laEsquinaMarker);
-
-    var espacioRMarker = new H.map.Marker({lat:-33.4181, lng:-70.6432});
-    map.addObject(espacioRMarker);
-
-    var amandyMarker = new H.map.Marker({lat:-33.4187, lng:-70.6433});
-    map.addObject(amandyMarker);
-
-    var doloresMarker = new H.map.Marker({lat:-33.4194, lng:-70.6423});
-    map.addObject(doloresMarker);
+    var londonMarker = new H.map.Marker({lat:51.5008, lng:-0.1224});
+    map.addObject(londonMarker);
   }
                 /**
                  * Boilerplate map initialization code starts below:
@@ -101,8 +86,8 @@ var defaultLayers = platform.createDefaultLayers({
 //Step 2: initialize a map - this map is centered over Europe
 var map = new H.Map(document.getElementById('map'),
   defaultLayers.normal.map,{
-  center: {lat:-33.4191, lng:-70.6418},
-  zoom: 17,
+  center: {lat:-33.40644, lng:-70.63951},
+  zoom: 4,
   pixelRatio: pixelRatio
 });
 
@@ -120,8 +105,8 @@ addMarkersToMap(map);
     </div>
     <!--FIN MAPA-->
 
-    <!--SEARCH-->
-<form class="form-inline my-2 my-lg-0">
+<!--SEARCH-->
+<form class="form-inline my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Búsca el local más cercano" aria-label="Search">
         <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
 </form>
@@ -135,15 +120,16 @@ addMarkersToMap(map);
     <!--FIN BOTÓN-->
 
 <!--PHRASE-->
-    <div>
-        <h5>
-
+    <div class="message">
+        <p>
             <br>"Defiende tu vida, lucha por tu independencia, busca tu felicidad y aprende a quererte" <br>
             <b> Izaskun González </b>
         </p>
     </div>
-
 <!--END PHRASE-->
+
+
+
 <!--COMMENT BOX-->
 <div class="card">
     <input type="input" class="card-header" placeholder="Nombre(Opcional)"/>
@@ -157,6 +143,7 @@ addMarkersToMap(map);
     </div>
 </div>    
 <!--END COMMENT BOX-->
+
 
 <!--SCRIPT BOOTSTRAP-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

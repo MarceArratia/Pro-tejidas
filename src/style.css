@@ -19,7 +19,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
     color: white;
 }
 
-
 @media screen and (min-width:480px){
 .container{
     position: fixed;
@@ -38,12 +37,13 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
 
 /* COMMENT BOX */
 .card{
-position: auto;
-width: 324px;
-height: 200px;
-background: #686FE1;
-box-shadow: 0px 4px 4px rgba(104, 111, 225, 0.43);
-border-radius: 10px;
+
+    position: auto;
+    width: 100%;
+    height: 100%;
+    background: #686FE1;
+    box-shadow: 0px 4px 4px rgba(104, 111, 225, 0.43);
+    border-radius: 10px;
 }
 
 .card-header{
@@ -54,14 +54,13 @@ border-radius: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
     background-color: antiquewhite;
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: normal;
-letter-spacing: 1.25px;
-
-color: #979797;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 1.25px;
+    color: #979797;
 
 }
 
@@ -74,9 +73,42 @@ background: #FFFFFF;
 
 .btn-primary2{
     position: center;
+    background: #00BCD4;
+    border-radius: 2px;
+}
 
+.buttonZone {
+    background: #686FE1;
+    margin-left: 19%;
+    border-radius: 30px;
+    font-size: 20px;
+    color: white;
+}
 
+.alert{
+    background-color: #F0F2F6;
+}
 
-background: #00BCD4;
-border-radius: 2px;
+.btn{
+    background-color: #00BCD4;
+    margin-left: 19%;
+    border-radius: 30px;
+    font-size: 20px;
+    color: white;
+}
+
+.p{
+    position: absolute;
+    width: 315px;
+    height: 63px;
+    left: 18px;
+    top: 497px;
+    margin: 5px;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: normal;
+    text-align: center;
+
 }
