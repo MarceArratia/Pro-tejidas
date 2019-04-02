@@ -118,6 +118,17 @@ var ui = H.ui.UI.createDefault(map, defaultLayers);
 
 // Now use the map as required...
 addMarkersToMap(map);
+
+/*document.getElementById("zoneButton").addEventListener("click,mostrar);
+Function mostrar(){
+//aquí lo que quieras mostrar si el Alert no sirve tendrás que usar el modal de bosstrap 
+Alert(“mensaje”);
+}
+
+document.getElementById("zoneButton").addEventListener("click",function(){
+    document.getElementById("repoGalery").innerHTML ="<img src='img/Group 4.png'>";
+
+});*/
 </script>               
     </div>
     <!--FIN MAPA-->
@@ -134,8 +145,12 @@ addMarkersToMap(map);
     <!--BOTÓN-->
     <p></p>
     <div>
-            <button type="button" class="buttonZone">Zona de seguridad</button>
+            <button type="button" id="zoneButton"  class="buttonZone">Zona de seguridad</button>
+        
         </div>
+        <div id="buttonZoneuno">
+             
+              </div>
     <!--FIN BOTÓN-->
 
 <!--PHRASE-->
@@ -166,6 +181,6 @@ addMarkersToMap(map);
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <!--END SCRIPT BOOTSTRAP-->
-<script src="app.js"></script>
+<script src="./app.js"></script>
 </body>
 </html>
