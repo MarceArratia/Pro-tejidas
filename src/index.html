@@ -15,30 +15,30 @@
     <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
     <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
     <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
-    <!--END MAP-->
+      <!--END MAP-->
     
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg navbar-light ">
-            <button class="navbar-toggler colorMenuIcon" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler colorMenuIcon" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" 
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon "></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <li class="nav-item">
                 <a class="colorMenu" href="#">¿Quiénes somos?</a>
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="colorMenu" href="#" data-toggle="modal" data-target="#exampleModalAmigos">Locales amigos<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="colorMenu" href="#">Locales amigos</a>
+                    <a class="colorMenu" href="#" data-toggle="modal" data-target="#exampleModalVoluntario">¿Quieres ser voluntario?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="colorMenu" href="#">¿Quieres ser voluntario?</a>
+                    <a class="colorMenu" href="#" tabindex="-1" aria-disabled="true">Teléfonos de emergencia</a> 
                 </li>
                 <li class="nav-item">
-                    <a class="colorMenu" href="#" tabindex="-1" aria-disabled="true">Teléfonos de emergencia</a>
+                    <a class="colorMenu" href="#" tabindex="-1" aria-disabled="true">Fono abuso</a>
                 </li>
-                <li class="nav-item">
-                        <a class="colorMenu" href="#" tabindex="-1" aria-disabled="true">Fono abuso</a>
-                </li>
-            
+              </ul>
             </div>
             </nav>
     <!--END NAVBAR-->
@@ -59,28 +59,28 @@
             <div id="map" style="width: 100%; height: 180px; background: grey" >
             <script  type="text/javascript" charset="UTF-8" >
             function addMarkersToMap(map) {
-    var metroMarker = new H.map.Marker({lat:-33.4228, lng:-70.6450});
+    var metroMarker = new H.map.Marker({lat:-33.4086, lng:-70.5676});
     map.addObject(metroMarker);
    
-    var crisMarker = new H.map.Marker({lat:-33.4193, lng: -70.6438});
+    var crisMarker = new H.map.Marker({lat:-33.4101, lng: -70.5731});
     map.addObject(crisMarker);
   
-    var laboratoriaMarker = new H.map.Marker({lat:-33.4191, lng:-70.6418});
+    var laboratoriaMarker = new H.map.Marker({lat:-33.4106, lng:-70.5721});
     map.addObject(laboratoriaMarker);
   
-    var donPepeMarker = new H.map.Marker({lat:-33.4187, lng: -70.6409});
+    var donPepeMarker = new H.map.Marker({lat:-33.4108, lng: -70.5734});
     map.addObject(donPepeMarker);
   
-    var laEsquinaMarker = new H.map.Marker({lat:-33.4186, lng:-70.6422});
+    var laEsquinaMarker = new H.map.Marker({lat:-33.4090, lng:-70.5688});
     map.addObject(laEsquinaMarker);
 
-    var espacioRMarker = new H.map.Marker({lat:-33.4181, lng:-70.6432});
+    var espacioRMarker = new H.map.Marker({lat:-33.4093, lng:-70.5683});
     map.addObject(espacioRMarker);
 
-    var amandyMarker = new H.map.Marker({lat:-33.4187, lng:-70.6433});
+    var amandyMarker = new H.map.Marker({lat:-33.4088, lng:-70.5684});
     map.addObject(amandyMarker);
 
-    var doloresMarker = new H.map.Marker({lat:-33.4194, lng:-70.6423});
+    var doloresMarker = new H.map.Marker({lat:-33.4091, lng:-70.5695});
     map.addObject(doloresMarker);
   }
                 /**
@@ -103,7 +103,7 @@ var defaultLayers = platform.createDefaultLayers({
 //Step 2: initialize a map - this map is centered over Europe
 var map = new H.Map(document.getElementById('map'),
   defaultLayers.normal.map,{
-  center: {lat:-33.4191, lng:-70.6418},
+  center: {lat:-33.4089, lng:-70.5691},
   zoom: 17,
   pixelRatio: pixelRatio
 });
@@ -119,16 +119,7 @@ var ui = H.ui.UI.createDefault(map, defaultLayers);
 // Now use the map as required...
 addMarkersToMap(map);
 
-/*document.getElementById("zoneButton").addEventListener("click,mostrar);
-Function mostrar(){
-//aquí lo que quieras mostrar si el Alert no sirve tendrás que usar el modal de bosstrap 
-Alert(“mensaje”);
-}
 
-document.getElementById("zoneButton").addEventListener("click",function(){
-    document.getElementById("repoGalery").innerHTML ="<img src='img/Group 4.png'>";
-
-});*/
 </script>               
     </div>
     <!--FIN MAPA-->
@@ -145,7 +136,7 @@ document.getElementById("zoneButton").addEventListener("click",function(){
     <!--BOTÓN-->
     <p></p>
     <div>
-            <button type="button" id="zoneButton"  class="buttonZone">Zona de seguridad</button>
+            <button type="button" id="zoneButton"  class="buttonZone" data-toggle="modal" data-target="#exampleModal">Zona de seguridad</button>
         
         </div>
         <div id="buttonZoneuno">
@@ -174,8 +165,63 @@ document.getElementById("zoneButton").addEventListener("click",function(){
         <a href="#" class="btn btn-primary">Enviar</a>
     </div>
 </div>    
-<!--END COMMENT BOX-->
 
+<!--END COMMENT BOX-->
+<!-- Modal Voluntario-->
+<div class="modal fade" id="exampleModalVoluntario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabelVoluntario">Postula</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img src="img/Voluntario.png" class="buttonPanic"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal voluntario-->
+
+<!-- Modal zona segura -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Zona Segura</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img src="img/Group 4.png" class="buttonPanic"/>
+        </div>
+        <div class="modal-footer">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal zona segura -->
+<!-- Modal Locales amigos -->
+<div class="modal fade" id="exampleModalAmigos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabelAmigos">Busca tu zona</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img src="img/localesamigos.png" class="storesFriends" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Fin modal locales amigos-->
 <!--SCRIPT BOOTSTRAP-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

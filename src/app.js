@@ -5,10 +5,7 @@ $('#myModal').on('shown.bs.modal', function () {
 
 
 
-document.getElementById("zoneButton").addEventListener("click",function(){
 
-    document.getElementById("buttonZoneuno").innerHTML=` <img src="img/Group 4.png"></img>`
-});
 
 /**
  * Moves the map to display over Berlin
