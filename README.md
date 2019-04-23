@@ -6,9 +6,9 @@ Pro-tejidas es una aplicación la cual fue creada con el fin de socorrer a las m
 ### Interfaz final
 
 
-![Interfaz](protejidas.png)
+![Interfaz](protejidas.jpg)
 
 
-![a](protejidas.png)
+
 
 
